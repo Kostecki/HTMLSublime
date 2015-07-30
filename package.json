@@ -1,0 +1,32 @@
+{
+  "name": "kosteckidk",
+  "version": "1.0.0",
+  "description": "The new kostecki.dk",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp": "^3.9.0"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.8.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-if": "^1.2.5",
+    "gulp-install": "^0.4.0",
+    "gulp-minify-css": "^1.2.0",
+    "gulp-notify": "^2.2.0",
+    "gulp-sass": "^2.0.4",
+    "gulp-uglify": "^1.2.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kostecki/kosteckidk.git"
+  },
+  "author": "Jacob Kostecki",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kostecki/kosteckidk/issues"
+  },
+  "homepage": "https://github.com/Kostecki/kosteckidk#readme"
+}

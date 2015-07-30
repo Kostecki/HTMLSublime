@@ -1,0 +1,32 @@
+h1, h2, h3, h4, h5, p, div {
+	font-family: 'Open Sans', sans-serif !important;
+}
+
+a {
+	text-decoration: none;
+
+	&:hover {
+		opacity: 0.8;
+		text-decoration: none;
+	}
+
+	&:visited {
+		text-decoration: none;
+	}
+
+	&:focus {
+		text-decoration: none;
+	}
+}
+
+.btn {
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 2.5em;
+	transition: all 0.5s ease 0s;
+}
+
+.centered {
+	float: none;
+	margin: 0 auto;
+}
