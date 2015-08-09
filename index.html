@@ -9,7 +9,7 @@
 		<!-- Bootstrap CSS -->
 		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
 		<!-- Font Awesome -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
 		<!-- Font -->
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
 
@@ -24,26 +24,50 @@
 		<![endif]-->
 	</head>
 	<body>
-		<div class="container-fluid">
-			<div class="row wrapper">
-				<div class="left-container col-md-12">
-					<img class="profile-pic" src="http://api.adorable.io/avatars/250/abott@adorable.io.png" alt="Me">
+		<div class="container">
+		  	<div class="row">
+		    	<div class="col-md-10 col-md-offset-1 sublime-wrap">
+		      		<div class="main-window">
 
-					<div class="me-info">
-						<h2>Jacob Kostecki</h2>
-					</div>
+		      		<!-- Top-part of the header -->
+		        	<div class="col-md-12 window-top">
+		          		<div class="col-md-4 top-buttons">
+		            		<span id="btn-close" class="top-btn"></span>
+		            		<span id="btn-minimize" class="top-btn"></span>
+		            		<span id="btn-fullscr" class="top-btn"></span>
+		          		</div>
 
-					<div class="social">
-						<img src="assets/img/face.png" alt="Facebook">
-						<img src="assets/img/linked.png" alt="LinkedIn">
-						<img src="assets/img/gplus.png" alt="Google+">
-						<img src="assets/img/github.png" alt="Github+">
-					</div>
-				</div>
-				<div class="right-container col-md-12">
-					<h1>Right</h1>
-				</div>
-			</div>
+		          		<div class="col-md-12 top-title">www.kostecki.dk</div>
+		        	</div>
+				
+					<!-- Sub-part of the header -->
+			        <div class="col-md-12 window-top-sub">
+			        	<div class="col-md-1 arrow-left-right">
+			            	<div id="t-left" class="triangle"></div>
+			            	<div id="t-right" class="triangle"></div>
+			          	</div>
+			          	<div class="col-md-9 tab-container">
+			            	<div class="tabs">
+			              		<p>index.html</p>
+			            	</div>
+			            	<div class="tabs">
+			              		<p>maybe-something-else.html</p>
+			            	</div>
+			          	</div>
+				    	<div class="col-md-2 arrow-down">
+				          	<div id="t-down" class="triangle"></div>
+				        </div>
+			        </div>
+					
+					<!-- Bottom part of the window -->
+				    <div class="col-md-12 window-bottom">
+				    	<div class="col-md-9 line-count">Line 1, Column 1</div>
+				        <div class="col-md-2 tab-size">Tab Size: 4</div>
+				        <div class="col-md-1 type">HTML</div>
+				      </div>
+			      </div>
+		    	</div>
+		  	</div>
 		</div>
 
 		<!-- jQuery -->
