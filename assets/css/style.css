@@ -41,7 +41,13 @@ body {
       -webkit-border-radius: 5px 5px 0 0;
       box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.05);
       -moz-box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.05);
-      -webkit-box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.05); }
+      -webkit-box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.05);
+      -webkit-touch-callout: none;
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none; }
       .sublime-wrap .main-window .window-top .top-buttons {
         color: gray;
         padding-left: 8px; }
@@ -68,7 +74,13 @@ body {
       height: 35px;
       display: inline-flex;
       align-items: center;
-      padding: 0; }
+      padding: 0;
+      -webkit-touch-callout: none;
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none; }
       .sublime-wrap .main-window .window-top-sub .tab-container .tabs {
         background: #26292C;
         color: white;
@@ -158,17 +170,28 @@ body {
         font-size: 13px;
         text-align: right;
         padding: 2px 0 0 0;
-        font-weight: bold; }
+        font-weight: bold;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none; }
         .sublime-wrap .main-window .main-content-area .line-numbers div {
           padding-right: 10px; }
         .sublime-wrap .main-window .main-content-area .line-numbers #line-active {
           background-color: #202021; }
       .sublime-wrap .main-window .main-content-area .actual-content {
-        color: white; }
+        color: white;
+        font-family: "monaco";
+        font-size: 12px;
+        line-height: 15px; }
         .sublime-wrap .main-window .main-content-area .actual-content xmp {
           margin: 0; }
-        .sublime-wrap .main-window .main-content-area .actual-content #indent-1 {
+        .sublime-wrap .main-window .main-content-area .actual-content .indent-1 {
           text-indent: 2rem; }
+        .sublime-wrap .main-window .main-content-area .actual-content .indent-2 {
+          text-indent: 3rem; }
         .sublime-wrap .main-window .main-content-area .actual-content .pnk {
           color: #E72566; }
         .sublime-wrap .main-window .main-content-area .actual-content .lgr {
@@ -200,7 +223,13 @@ body {
       background: linear-gradient(to bottom, #5b5b5b 0%, #545454 100%);
       /* W3C */
       filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5b5b5b', endColorstr='#545454',GradientType=0 );
-      /* IE6-8 */ }
+      /* IE6-8 */
+      -webkit-touch-callout: none;
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none; }
       .sublime-wrap .main-window .window-bottom .line-count {
         padding-left: 5px;
         padding: 2px 0 2px 0; }
