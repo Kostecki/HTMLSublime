@@ -14,9 +14,28 @@ body {
     -moz-box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.05);
     -webkit-box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.05); }
     .sublime-wrap .main-window .window-top {
-      background-color: #F6F6F6;
+      /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#fbfbfb+0,fbfbfb+0,f6f6f6+100 */
+      background: #fbfbfb;
+      /* Old browsers */
+      /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+      background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZiZmJmYiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjZmJmYmZiIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2Y2ZjZmNiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
+      background: -moz-linear-gradient(top, #fbfbfb 0%, #fbfbfb 0%, #f6f6f6 100%);
+      /* FF3.6+ */
+      background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fbfbfb), color-stop(0%, #fbfbfb), color-stop(100%, #f6f6f6));
+      /* Chrome,Safari4+ */
+      background: -webkit-linear-gradient(top, #fbfbfb 0%, #fbfbfb 0%, #f6f6f6 100%);
+      /* Chrome10+,Safari5.1+ */
+      background: -o-linear-gradient(top, #fbfbfb 0%, #fbfbfb 0%, #f6f6f6 100%);
+      /* Opera 11.10+ */
+      background: -ms-linear-gradient(top, #fbfbfb 0%, #fbfbfb 0%, #f6f6f6 100%);
+      /* IE10+ */
+      background: linear-gradient(to bottom, #fbfbfb 0%, #fbfbfb 0%, #f6f6f6 100%);
+      /* W3C */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fbfbfb', endColorstr='#f6f6f6',GradientType=0 );
+      /* IE6-8 */
       height: 25px;
-      padding-top: 3px;
+      padding: 3px 0 0 0;
+      border: 1px solid rgba(0, 0, 0, 0.05);
       border-bottom: 1px solid #B3B1B3;
       border-radius: 5px 5px 0 0;
       -webkit-border-radius: 5px 5px 0 0;
@@ -25,13 +44,13 @@ body {
       -webkit-box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.05); }
       .sublime-wrap .main-window .window-top .top-buttons {
         color: gray;
-        margin-left: -6px;
-        padding-left: 0; }
+        padding-left: 8px; }
         .sublime-wrap .main-window .window-top .top-buttons .top-btn {
           height: 11px;
           width: 11px;
           border-radius: 50%;
-          display: inline-block; }
+          display: inline-block;
+          cursor: pointer; }
           .sublime-wrap .main-window .window-top .top-buttons .top-btn:not(:first-of-type) {
             margin-left: 5px; }
         .sublime-wrap .main-window .window-top .top-buttons #btn-close {
@@ -57,13 +76,46 @@ body {
         min-width: 145px;
         margin-bottom: -5px;
         /* http://goo.gl/LTLVGz */
+        margin-right: 5px;
         display: inline-block;
         border-radius: 7px 7px 0 0;
         -webkit-border-radius: 7px 7px 0 0;
         border-top: 1px solid #3B3D3F;
-        padding-left: 10px; }
+        padding-left: 10px;
+        z-index: 10; }
+        .sublime-wrap .main-window .window-top-sub .tab-container .tabs:not(:first-of-type) {
+          background: #3C3D3E; }
+        .sublime-wrap .main-window .window-top-sub .tab-container .tabs:not(:first-of-type):before {
+          border-right: 12px solid #3C3D3E; }
+        .sublime-wrap .main-window .window-top-sub .tab-container .tabs:not(:first-of-type):after {
+          border-left: 12px solid #3C3D3E; }
+        .sublime-wrap .main-window .window-top-sub .tab-container .tabs:before {
+          content: "";
+          width: 0;
+          height: 0;
+          width: 0;
+          height: 0;
+          border-top: 29px solid transparent;
+          border-right: 12px solid #25282B;
+          position: fixed;
+          margin-left: -20px; }
+        .sublime-wrap .main-window .window-top-sub .tab-container .tabs:after {
+          content: "";
+          width: 0;
+          height: 0;
+          width: 0;
+          height: 0;
+          border-top: 30px solid transparent;
+          border-left: 12px solid #25282B;
+          position: relative;
+          float: right;
+          margin-top: -32px;
+          right: -9px;
+          z-index: 1; }
         .sublime-wrap .main-window .window-top-sub .tab-container .tabs p {
-          margin: 3px 0 0 0; }
+          margin-top: 6px;
+          font-size: 11px;
+          font-weight: 200; }
         .sublime-wrap .main-window .window-top-sub .tab-container .tabs p:after {
           content: "\f129";
           font-family: Ionicons;
@@ -71,7 +123,8 @@ body {
           padding-left: 10px;
           margin: 0 10px 2px 0;
           float: right;
-          line-height: 22px; }
+          line-height: 16px;
+          color: #828486; }
       .sublime-wrap .main-window .window-top-sub .arrow-left-right {
         padding-left: 8px; }
       .sublime-wrap .main-window .window-top-sub .arrow-down {
@@ -92,9 +145,38 @@ body {
       .sublime-wrap .main-window .window-top-sub #t-down {
         border-width: 8.7px 5px 0 5px;
         border-color: #868686 transparent transparent transparent; }
+    .sublime-wrap .main-window .main-content-area {
+      height: 100%;
+      padding-left: 0; }
+      .sublime-wrap .main-window .main-content-area .line-numbers {
+        color: #888D8F;
+        text-overflow: ellipsis;
+        width: 45px;
+        white-space: nowrap;
+        overflow: hidden;
+        line-height: 15px;
+        font-size: 13px;
+        text-align: right;
+        padding: 2px 0 0 0;
+        font-weight: bold; }
+        .sublime-wrap .main-window .main-content-area .line-numbers div {
+          padding-right: 10px; }
+        .sublime-wrap .main-window .main-content-area .line-numbers #line-active {
+          background-color: #202021; }
+      .sublime-wrap .main-window .main-content-area .actual-content {
+        color: white; }
+        .sublime-wrap .main-window .main-content-area .actual-content xmp {
+          margin: 0; }
+        .sublime-wrap .main-window .main-content-area .actual-content #indent-1 {
+          text-indent: 2rem; }
+        .sublime-wrap .main-window .main-content-area .actual-content .pnk {
+          color: #E72566; }
+        .sublime-wrap .main-window .main-content-area .actual-content .lgr {
+          color: #A6E200; }
+        .sublime-wrap .main-window .main-content-area .actual-content .ylw {
+          color: #DDDB6A; }
     .sublime-wrap .main-window .window-bottom {
       border-top: 1px solid #7D7D7D;
-      padding: 2px 0 2px 0;
       color: white;
       position: absolute;
       bottom: 0;
@@ -120,13 +202,16 @@ body {
       filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5b5b5b', endColorstr='#545454',GradientType=0 );
       /* IE6-8 */ }
       .sublime-wrap .main-window .window-bottom .line-count {
-        padding-left: 5px; }
+        padding-left: 5px;
+        padding: 2px 0 2px 0; }
       .sublime-wrap .main-window .window-bottom .tab-size {
         text-align: center;
         border-left: 1px solid gray;
-        border-right: 1px solid gray; }
+        border-right: 1px solid gray;
+        padding: 2px 0 2px 0; }
       .sublime-wrap .main-window .window-bottom .type {
-        text-align: center; }
+        text-align: center;
+        padding: 2px 0 2px 0; }
 
 .wrapper {
   text-align: center; }
