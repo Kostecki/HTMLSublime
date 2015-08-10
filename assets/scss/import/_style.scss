@@ -225,12 +225,12 @@ body {
           margin: 0;
         }
 
-        .indent-1 {
-          text-indent: 2rem;
+        .idnt-1 {
+          text-indent: 20px;
         }
 
-        .indent-2 {
-          text-indent: 3rem;
+        .idnt-2 {
+          text-indent: 40px;
         }
 
         .pnk {
@@ -251,6 +251,7 @@ body {
   		border-top: 1px solid #7D7D7D;
   		color: white;
   		position: absolute;
+      padding-right: 0;
   		bottom: 0;
   		font-size: 12px;
   		border-radius: 0 0 5px 5px;

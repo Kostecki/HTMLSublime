@@ -188,10 +188,10 @@ body {
         line-height: 15px; }
         .sublime-wrap .main-window .main-content-area .actual-content xmp {
           margin: 0; }
-        .sublime-wrap .main-window .main-content-area .actual-content .indent-1 {
-          text-indent: 2rem; }
-        .sublime-wrap .main-window .main-content-area .actual-content .indent-2 {
-          text-indent: 3rem; }
+        .sublime-wrap .main-window .main-content-area .actual-content .idnt-1 {
+          text-indent: 20px; }
+        .sublime-wrap .main-window .main-content-area .actual-content .idnt-2 {
+          text-indent: 40px; }
         .sublime-wrap .main-window .main-content-area .actual-content .pnk {
           color: #E72566; }
         .sublime-wrap .main-window .main-content-area .actual-content .lgr {
@@ -202,6 +202,7 @@ body {
       border-top: 1px solid #7D7D7D;
       color: white;
       position: absolute;
+      padding-right: 0;
       bottom: 0;
       font-size: 12px;
       border-radius: 0 0 5px 5px;
