@@ -1,4 +1,5 @@
-body {
+html, body {
+  height: 100%;
   font-family: sans-serif;
 }
 
@@ -91,6 +92,7 @@ body {
     			min-width: 145px;
     			margin-bottom: -5px; /* http://goo.gl/LTLVGz */
           margin-right: 5px;
+          margin-left: -40px;
     			display: inline-block;
     			border-radius: 7px 7px 0 0;
     			 -webkit-border-radius: 7px 7px 0 0;
@@ -190,7 +192,6 @@ body {
     }
 
     .main-content-area {
-      height: 100%;
       padding-left: 0;
 
       .line-numbers {
@@ -220,6 +221,62 @@ body {
         font-family: "monaco";
         font-size: 12px;
         line-height: 15px;
+        min-height: 100%;
+        height: 100%;
+      
+        .rendered-content {
+          font-family: "Open Sans";
+          height: 557px;
+          display: none;
+          align-items: center;
+          line-height: initial;
+          text-align: center;
+
+          img {
+            width: 50%;
+            border-radius: 50%;
+            overflow: hidden;
+            transition-duration: 3s;
+            transition-property: transform;
+            box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.4);
+             -moz-box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.4);
+             -webkit-box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.4);
+
+              &:hover {
+                transform: rotate(360deg);
+             }
+          }
+
+          .profile-text {
+            h1 {
+              font-size: 4.5rem;
+            }
+
+            h3 {
+              margin-top: 10px;
+            }
+            
+            .social {
+
+              hr {
+                width: 50%;
+              }
+
+              p {
+                font-size: 1.5rem;
+                margin-bottom: 5px;
+
+                a {
+                  color: white;
+
+                  &:hover, &:focus, &:active {
+                    text-decoration: none;
+                  }
+                }
+              }
+            }
+          }
+        }
 
         xmp {
           margin: 0;
@@ -243,6 +300,10 @@ body {
 
         .ylw {
           color: #DDDB6A;
+        }
+
+        .cmnt {
+          color: #46443D;
         }
       }
     }

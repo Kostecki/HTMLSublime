@@ -30,7 +30,7 @@ gulp.task('sass', function() {
 
 // JS tasks
 gulp.task('js', function() {
-    return gulp.src(config.assets + '/js/working-files/**/*.js') //
+    return gulp.src(config.assets + '/js/working-files/*.js') //
         .pipe(gulpif(env === 'production', uglify()))
         .pipe(concat('script.js'))
         .pipe(gulp.dest(config.assets + '/js'))
