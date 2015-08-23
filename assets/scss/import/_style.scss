@@ -1,6 +1,7 @@
 html, body {
   height: 100%;
   font-family: sans-serif;
+  background: #FAFAFA;
 }
 
 .sublime-wrap {
@@ -248,20 +249,22 @@ html, body {
           }
 
           .profile-text {
+            margin-left: -40px;
             h1 {
               font-size: 4.5rem;
+              margin-top: 0;
             }
 
             h3 {
               margin-top: 10px;
             }
+
+            hr {
+              width: 45%;
+              border-top: 1px solid rgba(255,255,255,0.7);
+            }
             
             .social {
-
-              hr {
-                width: 50%;
-              }
-
               p {
                 font-size: 1.5rem;
                 margin-bottom: 5px;
@@ -278,16 +281,20 @@ html, body {
           }
         }
 
-        xmp {
-          margin: 0;
-        }
-
         .idnt-1 {
           text-indent: 20px;
         }
 
         .idnt-2 {
           text-indent: 40px;
+        }
+
+        .idnt-3 {
+          text-indent: 60px;
+        }
+
+        .idnt-4 {
+          text-indent: 80px;
         }
 
         .pnk {
@@ -345,6 +352,35 @@ html, body {
         text-align: center;
         padding: 2px 0 2px 0;
       }
+    }
+  }
+
+  .skip-this-crap {
+    display: none;
+    margin-top: -2px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-weight: 100;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 13px;
+
+    a {
+      color: black;
+
+      &:hover {
+        opacity: 0.8;
+        text-decoration: none;
+      }
+
+      &:focus, &:active {
+        text-decoration: none;
+      }
+    }
+
+    .icon {
+      font-size: 2rem;
     }
   }
 }

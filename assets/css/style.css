@@ -1,6 +1,7 @@
 html, body {
   height: 100%;
-  font-family: sans-serif; }
+  font-family: sans-serif;
+  background: #FAFAFA; }
 
 .sublime-wrap {
   margin-top: 5rem;
@@ -207,25 +208,31 @@ html, body {
             -webkit-box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.4); }
             .sublime-wrap .main-window .main-content-area .actual-content .rendered-content img:hover {
               transform: rotate(360deg); }
-          .sublime-wrap .main-window .main-content-area .actual-content .rendered-content .profile-text h1 {
-            font-size: 4.5rem; }
-          .sublime-wrap .main-window .main-content-area .actual-content .rendered-content .profile-text h3 {
-            margin-top: 10px; }
-          .sublime-wrap .main-window .main-content-area .actual-content .rendered-content .profile-text .social hr {
-            width: 50%; }
-          .sublime-wrap .main-window .main-content-area .actual-content .rendered-content .profile-text .social p {
-            font-size: 1.5rem;
-            margin-bottom: 5px; }
-            .sublime-wrap .main-window .main-content-area .actual-content .rendered-content .profile-text .social p a {
-              color: white; }
-              .sublime-wrap .main-window .main-content-area .actual-content .rendered-content .profile-text .social p a:hover, .sublime-wrap .main-window .main-content-area .actual-content .rendered-content .profile-text .social p a:focus, .sublime-wrap .main-window .main-content-area .actual-content .rendered-content .profile-text .social p a:active {
-                text-decoration: none; }
-        .sublime-wrap .main-window .main-content-area .actual-content xmp {
-          margin: 0; }
+          .sublime-wrap .main-window .main-content-area .actual-content .rendered-content .profile-text {
+            margin-left: -40px; }
+            .sublime-wrap .main-window .main-content-area .actual-content .rendered-content .profile-text h1 {
+              font-size: 4.5rem;
+              margin-top: 0; }
+            .sublime-wrap .main-window .main-content-area .actual-content .rendered-content .profile-text h3 {
+              margin-top: 10px; }
+            .sublime-wrap .main-window .main-content-area .actual-content .rendered-content .profile-text hr {
+              width: 45%;
+              border-top: 1px solid rgba(255, 255, 255, 0.7); }
+            .sublime-wrap .main-window .main-content-area .actual-content .rendered-content .profile-text .social p {
+              font-size: 1.5rem;
+              margin-bottom: 5px; }
+              .sublime-wrap .main-window .main-content-area .actual-content .rendered-content .profile-text .social p a {
+                color: white; }
+                .sublime-wrap .main-window .main-content-area .actual-content .rendered-content .profile-text .social p a:hover, .sublime-wrap .main-window .main-content-area .actual-content .rendered-content .profile-text .social p a:focus, .sublime-wrap .main-window .main-content-area .actual-content .rendered-content .profile-text .social p a:active {
+                  text-decoration: none; }
         .sublime-wrap .main-window .main-content-area .actual-content .idnt-1 {
           text-indent: 20px; }
         .sublime-wrap .main-window .main-content-area .actual-content .idnt-2 {
           text-indent: 40px; }
+        .sublime-wrap .main-window .main-content-area .actual-content .idnt-3 {
+          text-indent: 60px; }
+        .sublime-wrap .main-window .main-content-area .actual-content .idnt-4 {
+          text-indent: 80px; }
         .sublime-wrap .main-window .main-content-area .actual-content .pnk {
           color: #E72566; }
         .sublime-wrap .main-window .main-content-area .actual-content .lgr {
@@ -278,6 +285,25 @@ html, body {
       .sublime-wrap .main-window .window-bottom .type {
         text-align: center;
         padding: 2px 0 2px 0; }
+  .sublime-wrap .skip-this-crap {
+    display: none;
+    margin-top: -2px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-weight: 100;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 13px; }
+    .sublime-wrap .skip-this-crap a {
+      color: black; }
+      .sublime-wrap .skip-this-crap a:hover {
+        opacity: 0.8;
+        text-decoration: none; }
+      .sublime-wrap .skip-this-crap a:focus, .sublime-wrap .skip-this-crap a:active {
+        text-decoration: none; }
+    .sublime-wrap .skip-this-crap .icon {
+      font-size: 2rem; }
 
 .wrapper {
   text-align: center; }
