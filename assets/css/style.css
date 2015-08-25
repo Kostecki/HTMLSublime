@@ -7,7 +7,7 @@ html, body {
   margin-top: 5rem;
   margin-bottom: 5rem; }
   .sublime-wrap .main-window {
-    height: 640px;
+    height: 765px;
     background: #26292C;
     position: relative;
     border-radius: 20px 20px 5px 5px;
@@ -15,6 +15,9 @@ html, body {
     box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.05);
     -moz-box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.05);
     -webkit-box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.05); }
+    @media (min-width: 768px) {
+      .sublime-wrap .main-window {
+        height: 640px; } }
     .sublime-wrap .main-window .window-top {
       /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#fbfbfb+0,fbfbfb+0,f6f6f6+100 */
       background: #fbfbfb;
@@ -91,7 +94,6 @@ html, body {
         margin-bottom: -5px;
         /* http://goo.gl/LTLVGz */
         margin-right: 5px;
-        margin-left: -40px;
         display: inline-block;
         border-radius: 7px 7px 0 0;
         -webkit-border-radius: 7px 7px 0 0;
@@ -141,9 +143,11 @@ html, body {
           line-height: 16px;
           color: #828486; }
       .sublime-wrap .main-window .window-top-sub .arrow-left-right {
-        padding-left: 8px; }
+        width: 40px;
+        padding-left: 10px;
+        padding-right: 0; }
       .sublime-wrap .main-window .window-top-sub .arrow-down {
-        padding-right: 8px;
+        padding-right: 10px;
         text-align: right; }
       .sublime-wrap .main-window .window-top-sub .triangle {
         width: 0;
@@ -195,8 +199,13 @@ html, body {
           height: 557px;
           display: none;
           align-items: center;
+          flex-direction: column;
+          justify-content: center;
           line-height: initial;
           text-align: center; }
+          @media (min-width: 768px) {
+            .sublime-wrap .main-window .main-content-area .actual-content .rendered-content {
+              flex-direction: row; } }
           .sublime-wrap .main-window .main-content-area .actual-content .rendered-content img {
             width: 50%;
             border-radius: 50%;
@@ -208,23 +217,36 @@ html, body {
             -webkit-box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.4); }
             .sublime-wrap .main-window .main-content-area .actual-content .rendered-content img:hover {
               transform: rotate(360deg); }
-          .sublime-wrap .main-window .main-content-area .actual-content .rendered-content .profile-text {
-            margin-left: -40px; }
-            .sublime-wrap .main-window .main-content-area .actual-content .rendered-content .profile-text h1 {
-              font-size: 4.5rem;
-              margin-top: 0; }
-            .sublime-wrap .main-window .main-content-area .actual-content .rendered-content .profile-text h3 {
-              margin-top: 10px; }
-            .sublime-wrap .main-window .main-content-area .actual-content .rendered-content .profile-text hr {
-              width: 45%;
-              border-top: 1px solid rgba(255, 255, 255, 0.7); }
-            .sublime-wrap .main-window .main-content-area .actual-content .rendered-content .profile-text .social p {
-              font-size: 1.5rem;
-              margin-bottom: 5px; }
-              .sublime-wrap .main-window .main-content-area .actual-content .rendered-content .profile-text .social p a {
-                color: white; }
-                .sublime-wrap .main-window .main-content-area .actual-content .rendered-content .profile-text .social p a:hover, .sublime-wrap .main-window .main-content-area .actual-content .rendered-content .profile-text .social p a:focus, .sublime-wrap .main-window .main-content-area .actual-content .rendered-content .profile-text .social p a:active {
-                  text-decoration: none; }
+            @media (max-width: 767px) {
+              .sublime-wrap .main-window .main-content-area .actual-content .rendered-content img {
+                margin-bottom: 50px; } }
+          @media (min-width: 768px) {
+            .sublime-wrap .main-window .main-content-area .actual-content .rendered-content .profile-text {
+              margin-left: -40px; } }
+          .sublime-wrap .main-window .main-content-area .actual-content .rendered-content .profile-text h1 {
+            font-size: 4.5rem;
+            margin-top: 0; }
+            @media (min-width: 768px) and (max-width: 992px) {
+              .sublime-wrap .main-window .main-content-area .actual-content .rendered-content .profile-text h1 {
+                font-size: 3.5rem; } }
+          .sublime-wrap .main-window .main-content-area .actual-content .rendered-content .profile-text h3 {
+            margin-top: 10px; }
+            @media (min-width: 768px) and (max-width: 992px) {
+              .sublime-wrap .main-window .main-content-area .actual-content .rendered-content .profile-text h3 {
+                font-size: 2rem; } }
+          .sublime-wrap .main-window .main-content-area .actual-content .rendered-content .profile-text hr {
+            width: 45%;
+            border-top: 1px solid rgba(255, 255, 255, 0.7); }
+          .sublime-wrap .main-window .main-content-area .actual-content .rendered-content .profile-text .social p {
+            font-size: 1.5rem;
+            margin-bottom: 5px; }
+            @media (min-width: 768px) and (max-width: 992px) {
+              .sublime-wrap .main-window .main-content-area .actual-content .rendered-content .profile-text .social p {
+                font-size: 1.3rem; } }
+            .sublime-wrap .main-window .main-content-area .actual-content .rendered-content .profile-text .social p a {
+              color: white; }
+              .sublime-wrap .main-window .main-content-area .actual-content .rendered-content .profile-text .social p a:hover, .sublime-wrap .main-window .main-content-area .actual-content .rendered-content .profile-text .social p a:focus, .sublime-wrap .main-window .main-content-area .actual-content .rendered-content .profile-text .social p a:active {
+                text-decoration: none; }
         .sublime-wrap .main-window .main-content-area .actual-content .idnt-1 {
           text-indent: 20px; }
         .sublime-wrap .main-window .main-content-area .actual-content .idnt-2 {
@@ -304,30 +326,3 @@ html, body {
         text-decoration: none; }
     .sublime-wrap .skip-this-crap .icon {
       font-size: 2rem; }
-
-.wrapper {
-  text-align: center; }
-  .wrapper .left-container {
-    width: 30vw;
-    height: 100vh;
-    background-color: #4aa3df;
-    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
-    -moz-box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
-    -webkit-box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5); }
-    .wrapper .left-container .profile-pic {
-      margin-top: 15%;
-      border-radius: 100%;
-      height: 20%; }
-    .wrapper .left-container .me-info {
-      margin-top: 80px; }
-    .wrapper .left-container .social {
-      position: absolute;
-      bottom: 15px;
-      width: calc(100% - 30px); }
-      .wrapper .left-container .social img {
-        width: 12%; }
-        .wrapper .left-container .social img:not(:last-of-type) {
-          margin-right: 15px; }
-  .wrapper .right-container {
-    width: 70vw;
-    height: 100vh; }

@@ -9,7 +9,10 @@ html, body {
 	margin-bottom: 5rem;
   
   .main-window {
-    height: 640px;
+    height: 765px;
+      @media (min-width: 768px) {
+        height: 640px;
+      }
     background: #26292C;
     position: relative;
     border-radius: 20px 20px 5px 5px;
@@ -93,7 +96,6 @@ html, body {
     			min-width: 145px;
     			margin-bottom: -5px; /* http://goo.gl/LTLVGz */
           margin-right: 5px;
-          margin-left: -40px;
     			display: inline-block;
     			border-radius: 7px 7px 0 0;
     			 -webkit-border-radius: 7px 7px 0 0;
@@ -160,11 +162,13 @@ html, body {
       }
       
       .arrow-left-right {
-        padding-left: 8px;
+        width: 40px;
+        padding-left: 10px;
+        padding-right: 0;
       }
       
       .arrow-down {
-        padding-right: 8px;
+        padding-right: 10px;
         text-align: right;
       }
       
@@ -230,6 +234,11 @@ html, body {
           height: 557px;
           display: none;
           align-items: center;
+          flex-direction: column;
+          justify-content: center;
+            @media (min-width: 768px) {
+              flex-direction: row;
+            }
           line-height: initial;
           text-align: center;
 
@@ -246,17 +255,29 @@ html, body {
               &:hover {
                 transform: rotate(360deg);
              }
+
+              @media (max-width: 767px) {
+                margin-bottom: 50px;
+              }
           }
 
           .profile-text {
-            margin-left: -40px;
+              @media (min-width: 768px) {
+                margin-left: -40px;
+              }
             h1 {
               font-size: 4.5rem;
               margin-top: 0;
+                @media (min-width: 768px) and (max-width: 992px) {
+                  font-size: 3.5rem;
+                }
             }
 
             h3 {
               margin-top: 10px;
+                @media (min-width: 768px) and (max-width: 992px) {
+                  font-size: 2rem;
+                }
             }
 
             hr {
@@ -268,6 +289,9 @@ html, body {
               p {
                 font-size: 1.5rem;
                 margin-bottom: 5px;
+                  @media (min-width: 768px) and (max-width: 992px) {
+                    font-size: 1.3rem;
+                  }
 
                 a {
                   color: white;
